@@ -2,6 +2,7 @@
     --primary-black-color: #303030;
     --primary-white-color: #FFFF;
     --primary-green-color: #0E6437;
+    
 }
 h1{
     font-family: 'Montserrat', sans-serif;
@@ -73,9 +74,48 @@ a{
     height: 30px;
     width: 100px;
 }
-
-.cover-story{
+.box-container{
+    margin: 20px;
+    box-shadow: 0px 4px 50px #d9d9d9;
+    padding: 20px;
+}
+.cover{
     grid-area: coverStory;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: auto;
+    column-gap: 20px;
+    grid-template-areas:
+    'category category'
+    'image text';
+}
+.category{
+    grid-area: category;
+    font-size: 10px;
+    color: var(--primary-green-color);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.cover-image{
+    grid-area: image;
+    width:750px;
+    height:400px; 
+    background:url(assets/Travel-Cover.jpg) ;
+    background-repeat: no-repeat;
+    background-position-y: 35%;
+    background-size: cover;
+}
+.cover-text{
+    grid-area: text;
+}
+.cover-text-titel{
+    margin: 20px 0;
+}
+.cover-text-description{
+    line-height: 20px;
+}
+.text-link{
+    color: var(--primary-green-color);
 }
 .main{
     grid-area: main;
