@@ -119,6 +119,38 @@ a{
 }
 .main{
     grid-area: main;
+    display:grid;
+    grid-template-columns: 2fr 1.5fr;
+    grid-auto-rows: auto;
+    column-gap: 20px;
+    grid-template-areas:
+    'category category'
+    'mainImage mainText'
+}
+.main-image{
+    grid-area: mainImage;
+    width:450px;
+    height:300px;
+}
+.main-text{
+    grid-area: mainText;
+}
+.main-title{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.main-description{
+    font-size: 14px;
+    line-height: 18px;
+}
+.main-link{
+    color: var(--primary-green-color);
+    font-size: 14px;
+}
+.image-1{
+    background: url(assets/Fairy-Tail.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .sidebar{
     grid-area: sidebar;
