@@ -195,6 +195,18 @@ background-position-y: 47%;
 .new-text{
     font-weight: 700;
 }
+.advertise{
+    padding-top:20px;
+}
+.advertise-image{
+    width: 275px;
+    height: 235px;
+}
+.image-5{
+    background: url('assets/Fairy-Tail.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .main-section-container{
     grid-area: section;
     display:flex;
