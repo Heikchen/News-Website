@@ -168,6 +168,19 @@ background-position-y: 47%;
 .sidebar{
     grid-area: sidebar;
 }
+.most-read{
+    padding-bottom:20px;
+    border-bottom: 1px solid var(--primary-black-color);
+}
+.most-read-container{
+    display:flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.most-read-text{
+    font-weight: 700;
+}
 .main-section-container{
     grid-area: section;
     display:flex;
